@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+  --font-heading: 'Space Grotesk', 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-marvel: 'Bebas Neue', sans-serif;
+  --font-editorial: 'Playfair Display', Georgia, serif;
+  --font-script: 'Permanent Marker', 'Caveat', cursive;
+
+  --color-cosmic-black: #030712;
+  --color-cosmic-deep: #060b1e;
+  --color-spidey-red: #e23636;
+  --color-spidey-dark-red: #991b1b;
+  --color-spidey-blue: #0284c7;
+  --color-electric-cyan: #38bdf8;
+}
+
+.font-marvel {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-editorial {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Permanent Marker', cursive;
+}
+
+:root {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #030712;
+  color: #e2e8f0;
+  color-scheme: dark;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  border-inline: none;
+  min-height: 100vh;
+  display: block;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+  border: 1px solid rgba(226, 54, 54, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+  border-color: rgba(56, 189, 248, 0.5);
+}
+
+/* Marvel Studios Style Red Badge (From Reference Images 2 & 3) */
+.marvel-studios-badge {
+  font-family: 'Bebas Neue', sans-serif;
+  background: #e23636;
+  color: #ffffff;
+  padding: 0.25rem 0.75rem;
+  letter-spacing: 0.15em;
+  font-size: 0.95rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #ffffff;
+  box-shadow: 0 4px 15px rgba(226, 54, 54, 0.4);
+}
+
+/* 3D Dimensional Spider-Man / Marvel Metallic Headline (From Reference Image 2) */
+.spiderman-3d-title {
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #38bdf8;
+  background: linear-gradient(180deg, #ffffff 0%, #bae6fd 25%, #0284c7 60%, #0369a1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 0 #dc2626) drop-shadow(0 5px 0 #991b1b) drop-shadow(0 10px 24px rgba(0, 0, 0, 0.95));
+}
+
+/* Spider-Man Red-Face 3D Title */
+.spiderman-3d-red {
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #f87171;
+  background: linear-gradient(180deg, #ffffff 0%, #fca5a5 20%, #ef4444 55%, #991b1b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 0 #0284c7) drop-shadow(0 5px 0 #0369a1) drop-shadow(0 10px 24px rgba(0, 0, 0, 0.95));
+}
+
+/* Script Subtitle Style (Spider-Man: No Way Home style from Reference Image 2) */
+.spiderman-script-sub {
+  font-family: 'Permanent Marker', cursive;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9), 0 0 16px rgba(56, 189, 248, 0.6);
+}
+
+/* Circular MCU Superhero Emblems (Inspired by Reference Image 1) */
+.mcu-emblem {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 35% 35%, rgba(30, 41, 59, 0.85), rgba(15, 23, 42, 0.95));
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.7), inset 0 2px 4px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mcu-emblem:hover {
+  transform: translateY(-2px) scale(1.05);
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 12px 25px -4px rgba(226, 54, 54, 0.3), 0 0 15px rgba(56, 189, 248, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+/* Frosted Stark-HUD Glass Card for seamless video blending */
+.stark-glass-card {
+  background: rgba(6, 11, 25, 0.68);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 35px -15px rgba(226, 54, 54, 0.25);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stark-glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.9), 0 0 40px -10px rgba(56, 189, 248, 0.25);
+}
+
+/* Clean Editorial Glass Panels (Dribbble Grade) */
+.editorial-glass-card {
+  background: rgba(8, 13, 26, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75), 0 0 30px -10px rgba(226, 54, 54, 0.15);
+}
+
+.editorial-glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
