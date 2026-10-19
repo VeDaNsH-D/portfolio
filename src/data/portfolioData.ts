@@ -8,6 +8,17 @@ export const PROFILE = {
     cgpa: "8.95 / 10.0",
     graduation: "May 2028",
     startYear: "2024",
+    coursework: [
+      "Operating Systems",
+      "Database Management Systems",
+      "Object Oriented Programming",
+      "Data Structures and Algorithms",
+      "Computer Networks",
+    ],
+    certifications: [
+      "Developing Back-End Apps with Node.js and Express (IBM)",
+      "Intro to Cloud Computing (IBM)",
+    ],
   },
   primaryIdentity: "Software Engineer | AI/ML Engineer | Backend & Systems Builder",
   heroHeadline: "I BUILD THINGS THAT SHOULD EXIST.",
@@ -57,16 +68,24 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/VeDaNsH-D/Scout",
     screenshots: [
       {
-        url: "/projects/scout-dashboard.jpg",
-        caption: "Real-time campaign analytics, lead scoring distribution, and Filecoin verifiable execution status.",
+        url: "/projects/scout-landing.png",
+        caption: "Landing Page & Growth Platform: Modern dark-mode interface designed for high-velocity growth teams, showcasing autonomous outreach orchestration and AI personalization at scale.",
       },
       {
-        url: "/projects/scout-workflow.jpg",
-        caption: "Visual DAG flow builder with triggers, ML scoring gates, LLM generation, delays, and dispatchers.",
+        url: "/projects/scout-dashboard.png",
+        caption: "AI Command Center & Live Analytics: Centralized command deck delivering real-time operational intelligence, email dispatch throughput, reply volume, and predictive lead scoring feedback.",
       },
       {
-        url: "/projects/scout-extension.jpg",
-        caption: "Manifest V3 Chrome Extension capturing LinkedIn profile intelligence and personalizing outreach paths.",
+        url: "/projects/scout-workflow.png",
+        caption: "Visual Node-Based Workflow Builder: Interactive DAG canvas with drag-and-drop triggers, machine learning scoring filters, LLM generation nodes, scheduled delay logic, and Filecoin anchoring.",
+      },
+      {
+        url: "/projects/scout-lead-upload.png",
+        caption: "Lead Management & Bulk Ingestion Pipeline: High-throughput lead ingestion interface featuring drag-and-drop CSV uploads, automated email verification, and database synchronization.",
+      },
+      {
+        url: "/projects/scout-ai-chatbot.png",
+        caption: "Contextual AI Chatbot & Knowledge Assistant: RAG-enabled conversational assistant powered by Llama 3, providing real-time guidance on lead statuses and outreach workflows.",
       },
     ],
     theme: {
@@ -163,16 +182,24 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://india-next-rho.vercel.app/",
     screenshots: [
       {
-        url: "/projects/krypton-hero.png",
-        caption: "Unified threat analysis console displaying risk score matrix and real-time scanning controls.",
+        url: "/projects/krypton-landing.png",
+        caption: "Krypton Platform Overview: Unified landing portal showcasing cross-platform ingress channels, including browser extensions, mobile clients, Telegram Sentinel, and WhatsApp integrations.",
       },
       {
-        url: "/projects/krypton-flow.png",
-        caption: "Minimalist multi-channel ingestion architecture mapping incoming threat vectors.",
+        url: "/projects/krypton-dashboard.png",
+        caption: "Security Posture Dashboard: Security overview displaying aggregate scan throughput, risk level breakdowns, daily activity timelines, and primary threat distribution vectors.",
       },
       {
-        url: "/projects/krypton-shield.png",
-        caption: "Security operations center displaying categorized threat indicators and immediate mitigation steps.",
+        url: "/projects/krypton-threat-analysis.png",
+        caption: "Threat Submission & Analysis Console: Multi-vector threat console with inputs for messages, URLs, prompt injection tests, and automated decision tracing.",
+      },
+      {
+        url: "/projects/krypton-alerts-playbook.png",
+        caption: "High-Risk Alert Queue & Response Playbook: Prioritized incident triage queue displaying triggered heuristic conditions, confidence metrics, and analyst response playbooks.",
+      },
+      {
+        url: "/projects/krypton-case-history.png",
+        caption: "Detection Case Archive: Historical case records with risk-level filtering, communication channel filtering, and detailed decision audit logs.",
       },
     ],
     theme: {
@@ -445,36 +472,35 @@ export const PROJECTS: Project[] = [
     },
   },
   {
-    id: "relay",
-    name: "Relay (RGIT Hack)",
+    id: "over2u",
+    name: "Over2u",
     dimensionTitle: "Dimension ε : Context Handoff Engine",
-    category: "Context-Aware Developer Handoff & Real-Time Sync",
-    domainFilter: "realtime",
+    category: "AI-Powered Developer Handoff & Knowledge Onboarding",
+    domainFilter: "ai-workflows",
     summary:
-      "Enterprise project continuity engine providing structured developer handoffs with completeness validation, multi-channel notifications (Slack, Jira, Notion, WhatsApp), and live Agora RTC/RTM video/chat collaboration.",
+      "AI-powered developer handoff platform that generates source-grounded onboarding runbooks by ingesting context from GitHub, Jira, Slack, Notion, and project documents, featuring Groq RAG chat, MCP tools for AI coding clients, Agora WebRTC collaboration, and SHA-256 audited ownership transfers.",
     techStack: [
-      "React 19",
-      "Vite",
-      "Node.js",
+      "React",
       "Express",
-      "MongoDB Replica Set",
-      "Agora RTC & RTM SDK",
-      "Selenium",
-      "Jira REST API",
+      "FastAPI",
+      "MongoDB",
+      "Groq",
+      "Agora WebRTC",
+      "MCP",
+      "Jira API",
       "Notion API",
       "Slack Webhooks",
-      "Python AI",
     ],
     githubUrl: "https://github.com/VeDaNsH-D/RGIT_Hack",
     demoUrl: "https://rgit-hack.vercel.app/",
     screenshots: [
       {
-        url: "/projects/relay-hero.png",
-        caption: "Relay project overview showcasing task continuity, audit tracking, and connected workspace integrations.",
+        url: "/projects/over2u-hero.png",
+        caption: "Over2u platform overview highlighting AI-driven onboarding runbooks, context ingestion, and team continuity.",
       },
       {
-        url: "/projects/relay-dashboard.png",
-        caption: "Comprehensive handoff workspace featuring completeness validation and live teammate status indicators.",
+        url: "/projects/over2u-dashboard.png",
+        caption: "Context-aware handoff workspace with completeness verification, Agora live collaboration, and SHA-256 audit trails.",
       },
     ],
     theme: {
@@ -489,55 +515,55 @@ export const PROJECTS: Project[] = [
       problem:
         "When engineering ownership transfers between developers, context is lost in fragmented Slack threads, incomplete Jira tickets, and undocumented Notion pages. Critical edge cases go uncommunicated, causing production breakages during handoffs.",
       solution:
-        "Engineered Relay: an atomic handoff coordination engine that enforces completeness criteria, synchronizes documents from Jira, Notion, and Slack, alerts stakeholders via WhatsApp Cloud and automated web dispatchers, and hosts live Agora audio/video call suites with real-time transcription.",
+        "Engineered Over2u: an AI-powered developer handoff platform that ingests context across GitHub, Jira, Slack, Notion, and project documents to generate source-grounded onboarding runbooks. Integrates Groq-powered RAG chat, MCP tools for AI coding clients, Agora WebRTC live collaboration rooms, and validated ownership transfers backed by MongoDB transactions and a SHA-256 audit trail.",
       architectureFlow: {
         steps: [
           {
             step: "01",
-            title: "Multi-Source Document Ingestion",
-            details: "Connectors pull context from Jira Cloud (JQL search), Notion databases, and Slack threads with unified normalization.",
+            title: "Multi-Source Context Ingestion",
+            details: "Connectors pull context from GitHub, Jira Cloud, Notion databases, Slack threads, and project markdown with unified normalization.",
           },
           {
             step: "02",
-            title: "Completeness Validation",
-            details: "Rule engine verifies prerequisite checklist items (PR links, architectural notes, rollback steps) before submission.",
+            title: "Source-Grounded Runbook Generation",
+            details: "Synthesizes comprehensive onboarding runbooks, architectural context, and setup runbooks directly from ingested artifacts.",
           },
           {
             step: "03",
-            title: "Atomic Ownership Transfer",
-            details: "MongoDB replica set transactions execute ownership transitions atomically upon recipient acknowledgement.",
+            title: "Groq RAG & MCP Integration",
+            details: "Provides ultra-fast RAG Q&A on repo context via Groq, and exposes Model Context Protocol (MCP) endpoints for IDE coding clients.",
           },
           {
             step: "04",
-            title: "Omnichannel Notifications",
-            details: "Notification service dispatches across 8 event contracts to WhatsApp Cloud API, Selenium Web automation, and email.",
+            title: "Agora WebRTC Live Collaboration",
+            details: "Embedded live video, audio, and real-time messaging rooms for synchronous walk-through sessions between outgoing and incoming engineers.",
           },
           {
             step: "05",
-            title: "Agora Live Call Suite",
-            details: "Integrated Agora RTC video/audio and Agora RTM messaging for real-time live handoff review sessions.",
+            title: "Atomic Transfer & SHA-256 Audit Trail",
+            details: "MongoDB replica set transactions execute validated ownership transfers with an immutable SHA-256 cryptographic audit trail.",
           },
         ],
       },
       coreImplementation: [
-        "Implemented standardized external integration connectors (BaseConnector) and ADF parsers for Jira Cloud, Notion blocks, and Slack messages.",
-        "Engineered Agora RTC and RTM collaboration rooms with token TTL generation, microphone state handling, and live transcription streaming.",
-        "Built resilient notification dispatchers supporting 8 distinct domain events with bounded retries and exponential backoff.",
-        "Implemented WhatsApp Cloud API integration alongside a Selenium-based WhatsApp Web automation adapter for fallback delivery.",
-        "Configured atomic transaction boundaries using MongoDB Replica Sets to ensure audit trails cannot become desynchronized.",
+        "Built automated multi-source ingestion connecting GitHub, Jira Cloud, Notion blocks, and Slack message threads.",
+        "Engineered Groq-powered RAG assistant answering contextual questions on legacy codebases and runbooks.",
+        "Implemented Model Context Protocol (MCP) server endpoints allowing external AI coding assistants to query handoff intelligence.",
+        "Built live Agora WebRTC video, audio, and RTM collaboration rooms with real-time room presence and state sync.",
+        "Configured atomic transfer transactions with MongoDB replica sets and an immutable SHA-256 hash log for governance.",
       ],
       challengesAndTradeoffs: [
         "Ensuring atomic handoff transitions without distributed deadlocks: Utilized MongoDB multi-document ACID transactions with strict timeout policies.",
-        "Maintaining Agora video stream stability with dynamic host token expiration: Engineered background token renewal routines with graceful fallback to RTM text chat.",
+        "Grounding RAG answers accurately across heterogeneous tools: Standardized all external documents into unified markdown chunks before vector embedding.",
       ],
       verifiedResults: [
         "Live deployment operational at https://rgit-hack.vercel.app/.",
-        "Complete test suite covering all 8 notification contracts, Jira ADF normalizers, and MongoDB session invitations.",
-        "Seamless Agora audio/video handoff rooms with low-latency real-time participant state sync.",
+        "Validated ownership transfers and audit verification across team handoff simulations.",
+        "Low-latency real-time collaboration with Agora WebRTC audio/video rooms.",
       ],
       futureImprovements: [
-        "LLM-generated handoff risk score based on pull request complexity and code churn.",
-        "Automated GitHub action hooks to trigger handoffs on PR merge.",
+        "Autonomous code change impact analysis evaluating pull request risk automatically.",
+        "Direct integration with GitHub Actions for automated handoff triggers upon branch merges.",
       ],
     },
   },
@@ -710,10 +736,10 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     description: "Predictive decision engines, speech-to-text pipelines, and LLM orchestration.",
     color: "from-emerald-500 to-teal-500",
     skills: [
-      { name: "scikit-learn", highlight: "Classification, regression, cross-validation & pipelines" },
-      { name: "LLM APIs", highlight: "Groq, Gemini & multi-model orchestration with fallback" },
-      { name: "Speech-to-Text", highlight: "Multilingual transcription & audio processing" },
       { name: "Generative AI", highlight: "Structured schema generation & prompt guardrails" },
+      { name: "Speech-to-Text", highlight: "Multilingual transcription & audio processing" },
+      { name: "LLM APIs", highlight: "Groq, Gemini & multi-model orchestration with fallback" },
+      { name: "scikit-learn", highlight: "Classification, regression, cross-validation & pipelines" },
     ],
   },
 ];
