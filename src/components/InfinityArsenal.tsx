@@ -64,8 +64,8 @@ export const InfinityArsenal: React.FC = () => {
               {cat.description}
             </p>
 
-            {/* Skills List */}
-            <div className="space-y-2 mt-auto pt-2 border-t border-white/5">
+            {/* Skills List - Flow from top to bottom */}
+            <div className="space-y-2 pt-3 border-t border-white/5">
               {cat.skills.map((skill) => (
                 <div
                   key={skill.name}

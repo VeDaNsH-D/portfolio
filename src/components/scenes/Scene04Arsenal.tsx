@@ -97,7 +97,7 @@ export const Scene04Arsenal: React.FC = () => {
           {SKILL_CATEGORIES.map((cat) => (
             <div
               key={cat.category}
-              className="rounded-2xl stark-glass-card p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-red-950/30 flex flex-col justify-between"
+              className="rounded-2xl stark-glass-card p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-red-950/30 flex flex-col justify-start"
             >
               <div>
                 {/* Category Header with MCU Superhero Emblem */}
@@ -111,13 +111,13 @@ export const Scene04Arsenal: React.FC = () => {
                 <h3 className="font-marvel text-2xl text-white uppercase tracking-wider mb-1">
                   {cat.category}
                 </h3>
-                <p className="text-xs text-slate-300 font-light mb-5 leading-relaxed">
+                <p className="text-xs text-slate-300 font-light mb-4 leading-relaxed">
                   {cat.description}
                 </p>
               </div>
 
-              {/* Skills Tags */}
-              <div className="space-y-2 pt-2 border-t border-white/10">
+              {/* Skills Tags - Listed directly from top to bottom */}
+              <div className="space-y-2 pt-3 border-t border-white/10">
                 {cat.skills.map((skill) => (
                   <div
                     key={skill.name}
@@ -145,7 +145,7 @@ export const Scene04Arsenal: React.FC = () => {
           {ACHIEVEMENTS.map((item) => (
             <div
               key={item.id}
-              className="rounded-2xl stark-glass-card p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-950/30 flex flex-col justify-between"
+              className="rounded-2xl stark-glass-card p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-950/30 flex flex-col justify-start"
             >
               <div>
                 <div className="flex items-center justify-between gap-2 mb-3">
